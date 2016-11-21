@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='scriptsNStyles' Clean='clean' />
+﻿/// <binding BeforeBuild='scriptsNStyles, ts' Clean='clean' />
 var ts = require('gulp-typescript');
 var gulp = require('gulp');
 var clean = require('gulp-clean');
@@ -36,7 +36,7 @@ gulp.task('ts', function (done) {
             "tsScripts/*.ts"
     ])
         .pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
-    return tsResult.js.pipe(gulp.dest('./Scripts'));
+    return tsResult.js.pipe(gulp.dest('./Scripts/ng-2'));
 });
 
 gulp.task('watch', ['watch.ts']);

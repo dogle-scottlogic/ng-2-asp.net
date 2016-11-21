@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+testApp/Scripts/ng-2/
+!testApp/Scripts/ng-2/systemjs.config.js
