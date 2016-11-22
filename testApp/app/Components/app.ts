@@ -2,8 +2,8 @@
 
 @Component({
     selector: 'my-app',
-    styleUrls: ['../Content/Styles/app.style.css'],
-    templateUrl: '../../Views/Templates/app.template.html',
+    styleUrls: ['../app/Styles/app.style.css'],
+    templateUrl: '../app/Templates/app.template.html',
 })
 
 export class AppComponent {
