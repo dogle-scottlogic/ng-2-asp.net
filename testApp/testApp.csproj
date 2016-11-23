@@ -372,6 +372,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="gulpfile.js" />
+    <Content Include="karma.conf.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -450,6 +451,7 @@
     <Folder Include="app\Entities\" />
     <Folder Include="app\Services\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Tests\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
