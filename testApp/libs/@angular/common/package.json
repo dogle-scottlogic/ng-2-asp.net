@@ -1,40 +1,49 @@
 {
   "_args": [
     [
-      "@angular/common@2.0.0",
+      {
+        "raw": "@angular/common@2.2.2",
+        "scope": "@angular",
+        "escapedName": "@angular%2fcommon",
+        "name": "@angular/common",
+        "rawSpec": "2.2.2",
+        "spec": "2.2.2",
+        "type": "version"
+      },
       "C:\\dev\\testApp\\testApp"
     ]
   ],
-  "_from": "@angular/common@2.0.0",
-  "_id": "@angular/common@2.0.0",
+  "_from": "@angular/common@2.2.2",
+  "_id": "@angular/common@2.2.2",
   "_inCache": true,
   "_location": "/@angular/common",
-  "_nodeVersion": "5.4.1",
+  "_nodeVersion": "5.8.0",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/common-2.0.0.tgz_1473906728474_0.9663767674937844"
+    "tmp": "tmp/common-2.2.2.tgz_1479854705195_0.5866104734595865"
   },
   "_npmUser": {
-    "email": "angular-core+npm@google.com",
-    "name": "angular"
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
   },
-  "_npmVersion": "3.9.2",
+  "_npmVersion": "3.5.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "@angular/common",
-    "raw": "@angular/common@2.0.0",
-    "rawSpec": "2.0.0",
+    "raw": "@angular/common@2.2.2",
     "scope": "@angular",
-    "spec": "2.0.0",
+    "escapedName": "@angular%2fcommon",
+    "name": "@angular/common",
+    "rawSpec": "2.2.2",
+    "spec": "2.2.2",
     "type": "version"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular/common/-/common-2.0.0.tgz",
-  "_shasum": "6d5b38cef8bec69726590f395da10c2d89146247",
+  "_resolved": "https://registry.npmjs.org/@angular/common/-/common-2.2.2.tgz",
+  "_shasum": "a2fb13260c393cfe9802e75c8a483517b9c74dbd",
   "_shrinkwrap": null,
-  "_spec": "@angular/common@2.0.0",
+  "_spec": "@angular/common@2.2.2",
   "_where": "C:\\dev\\testApp\\testApp",
   "author": {
     "name": "angular"
@@ -47,11 +56,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "6d5b38cef8bec69726590f395da10c2d89146247",
-    "tarball": "https://registry.npmjs.org/@angular/common/-/common-2.0.0.tgz"
+    "shasum": "a2fb13260c393cfe9802e75c8a483517b9c74dbd",
+    "tarball": "https://registry.npmjs.org/@angular/common/-/common-2.2.2.tgz"
   },
   "homepage": "https://github.com/angular/angular#readme",
-  "installable": true,
   "license": "MIT",
   "main": "bundles/common.umd.js",
   "maintainers": [
@@ -64,13 +72,14 @@
   "name": "@angular/common",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular/core": "^2.0.0"
+    "@angular/core": "2.2.2"
   },
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angular/angular.git"
   },
   "scripts": {},
   "typings": "index.d.ts",
-  "version": "2.0.0"
+  "version": "2.2.2"
 }

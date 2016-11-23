@@ -1,0 +1,6 @@
+[10:08:21] Using gulpfile C:\dev\testApp\testApp\gulpfile.js
+[10:08:21] Starting 'ts'...
+[10:08:23] TypeScript: 788 semantic errors
+[10:08:23] TypeScript: 788 emit errors
+[10:08:23] TypeScript: emit failed
+[10:08:23] Finished 'ts' after 2.8 s

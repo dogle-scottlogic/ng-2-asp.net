@@ -37,7 +37,7 @@ gulp.task('karma-test', function (done) {
     }, done).start();
 });
 
-var tsProject = ts.createProject('tsconfig.json', {
+var tsProject = ts.createProject('./app/tsconfig.json', {
     typescript: require('typescript')
 });
 
@@ -46,14 +46,18 @@ gulp.task('ts', function (done) {
     var tsResult = gulp.src([
             "app/*.ts"
     ])
-        .pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
+        .pipe(tsProject(), undefined, ts.reporter.fullReporter());
     return tsResult.js.pipe(gulp.dest('./Scripts/ng-2'));
+});
+
+var tsTest = ts.createProject('./Tests/tsconfig.json', {
+    typescript: require('typescript')
 });
 
 gulp.task('compile-tests', function (done) {
     var testResult = gulp.src([
         "Tests/*.ts"
-    ]).pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
+    ]).pipe(tsTest(), undefined, ts.reporter.fullReporter());
     return testResult.js.pipe(gulp.dest('./Tests/js'));
 });
 
