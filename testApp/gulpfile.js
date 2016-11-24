@@ -28,7 +28,7 @@ gulp.task("scriptsNStyles", () => {
         .pipe(gulp.dest("./libs"));
 });
 
-gulp.task('test', ['compile-tests', 'karma-test']);
+gulp.task('test', ['ts', 'compile-tests', 'karma-test']);
 
 gulp.task('karma-test', function (done) {
     new Server({

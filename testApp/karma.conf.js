@@ -1,12 +1,12 @@
 ﻿// #docregion
 module.exports = function (config) {
 
-    var appBase = 'app/';       // transpiled app JS and map files
+    var appBase = 'Scripts/ng-2/';       // transpiled app JS and map files
     var appSrcBase = 'app/';       // app source TS files
-    var appAssets = 'base/app/'; // component assets fetched by Angular's compiler
+    var appAssets = 'base/libs/'; // component assets fetched by Angular's compiler
 
-    var testBase = 'Tests/js';       // transpiled test JS and map files
-    var testSrcBase = '/Tests/';       // test source TS files
+    var testBase = 'Tests/js/';       // transpiled test JS and map files
+    var testSrcBase = 'Tests/';       // test source TS files
 
     config.set({
         basePath: '',
@@ -57,14 +57,14 @@ module.exports = function (config) {
           'karma-test-shim.js',
 
           // transpiled application & spec code paths loaded via module imports
-          { pattern: appBase + '**/*.js', included: false, watched: true },
+          { pattern: appBase + '*.js', included: true, watched: true, served: true },
           { pattern: testBase + '**/*.js', included: false, watched: true },
 
 
           // Asset (HTML & CSS) paths loaded via Angular's component compiler
           // (these paths need to be rewritten, see proxies section)
-          { pattern: appBase + '**/*.html', included: false, watched: true },
-          { pattern: appBase + '**/*.css', included: false, watched: true },
+          { pattern: 'app/**/*.html', included: false, watched: true },
+          { pattern: 'app/**/*.css', included: false, watched: true },
 
           // Paths for debugging with source maps in dev tools
           { pattern: appSrcBase + '**/*.ts', included: false, watched: false },
