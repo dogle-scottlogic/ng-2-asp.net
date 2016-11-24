@@ -1,0 +1,3 @@
+﻿exports.HmrState = function () {
+
+};
