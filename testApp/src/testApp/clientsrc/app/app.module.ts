@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './components/app.component.main';
 import { MaterialModule } from '@angular/material';
+import { MealListComponent } from './components/app.component.mealList'
 
 @NgModule({
     imports: [
@@ -9,7 +10,8 @@ import { MaterialModule } from '@angular/material';
         MaterialModule.forRoot()
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        MealListComponent
     ],
     bootstrap: [AppComponent]
 })
