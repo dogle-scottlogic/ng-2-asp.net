@@ -7,5 +7,5 @@
 })
 
 export class MealListComponent {
-    private mealList: string[] = ["mock value"];
+    private mealList: string[] = ['mock value'];
 }

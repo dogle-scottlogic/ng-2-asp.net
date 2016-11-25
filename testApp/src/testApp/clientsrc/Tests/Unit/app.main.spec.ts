@@ -1,9 +1,7 @@
 ﻿// Sanity test 
 /// <reference path="../../../node_modules/@types/jasmine/index.d.ts"/> 
 
-import {
-    TestBed
-} from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 
 describe('Sanity Test', () => {
 

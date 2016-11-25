@@ -112,7 +112,7 @@ module.exports = function (options) {
               {
                   test: /\.json$/,
                   use: 'json-loader',
-                  exclude: [helpers.root('src/index.html')]
+                  exclude: [helpers.root('clientsrc/index.html')]
               },
 
               /**
@@ -124,7 +124,7 @@ module.exports = function (options) {
               {
                   test: /\.css$/,
                   use: ['to-string-loader', 'css-loader'],
-                  exclude: [helpers.root('src/index.html')]
+                  exclude: [helpers.root('clientsrc/index.html')]
               },
 
               /**
@@ -136,7 +136,7 @@ module.exports = function (options) {
               {
                   test: /\.html$/,
                   use: 'raw-loader',
-                  exclude: [helpers.root('src/index.html')]
+                  exclude: [helpers.root('clientsrc/index.html')]
               },
 
               /**
@@ -196,7 +196,7 @@ module.exports = function (options) {
           new ContextReplacementPlugin(
             // The (\\|\/) piece accounts for path separators in *nix and Windows
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            helpers.root('src'), // location of your src
+            helpers.root('clientsrc'), // location of your src
             {
                 // your Angular Async Route paths relative to this root directory
             }
