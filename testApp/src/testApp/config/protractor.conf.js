@@ -22,9 +22,10 @@ exports.config = {
     jasmineNodeOpts: {
         showTiming: true,
         showColors: true,
-        isVerbose: false,
+        isVerbose: true,
         includeStackTrace: false,
-        defaultTimeoutInterval: 400000
+        defaultTimeoutInterval: 400000,
+        print: function () { }
     },
     directConnect: true,
 
@@ -37,6 +38,9 @@ exports.config = {
 
     onPrepare: function () {
         browser.ignoreSynchronization = true;
+        var SpecReporter = require('jasmine-spec-reporter');
+        // add jasmine spec reporter
+        jasmine.getEnv().addReporter(new SpecReporter({ displayStacktrace: 'all' }));
     },
 
     /**

@@ -6,7 +6,7 @@ describe('App', function () {
     });
     it('should have a title', function () {
         var subject = browser.getTitle();
-        var result = 'Angular2 Webpack Starter by @gdi2290 from @AngularClass';
+        var result = 'My App';
         expect(subject).toEqual(result);
     });
     it('should have header', function () {
@@ -14,14 +14,19 @@ describe('App', function () {
         var result = true;
         expect(subject).toEqual(result);
     });
-    it('should have <home>', function () {
-        var subject = element(by.css('app home')).isPresent();
+    it('The header should read \'Article is ASP.NET Core with Angular 2 with Visual Studio\'', function () {
+        var subject = element(by.css('h1')).isPresent();
         var result = true;
         expect(subject).toEqual(result);
     });
-    it('should have buttons', function () {
+    it('should have a button', function () {
+        var subject = element(by.css('button')).isPresent();
+        var result = true;
+        expect(subject).toEqual(result);
+    });
+    it('The button should say \'Click Me !!\'', function () {
         var subject = element(by.css('button')).getText();
-        var result = 'Submit Value';
+        var result = 'Click Me !!';
         expect(subject).toEqual(result);
     });
 });

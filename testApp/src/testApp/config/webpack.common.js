@@ -12,7 +12,7 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
-    title: 'ASP.NET Core with Webpacks',
+    title: 'My App',
     baseUrl: '/',
     isDevServer: helpers.isWebpackDevServer()
 };

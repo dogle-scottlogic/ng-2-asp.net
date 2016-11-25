@@ -10,7 +10,7 @@ describe('App', () => {
 
     it('should have a title', () => {
         let subject = browser.getTitle();
-        let result = 'Angular2 Webpack Starter by @gdi2290 from @AngularClass';
+        let result = 'My App';
         expect(subject).toEqual(result);
     });
 
@@ -20,15 +20,21 @@ describe('App', () => {
         expect(subject).toEqual(result);
     });
 
-    it('should have <home>', () => {
-        let subject = element(by.css('app home')).isPresent();
+    it('The header should read \'Article is ASP.NET Core with Angular 2 with Visual Studio\'', () => {
+        let subject = element(by.css('h1')).isPresent();
         let result = true;
         expect(subject).toEqual(result);
     });
 
-    it('should have buttons', () => {
+    it('should have a button', () => {
+        let subject = element(by.css('button')).isPresent();
+        let result = true;
+        expect(subject).toEqual(result);
+    });
+
+    it('The button should say \'Click Me !!\'', () => {
         let subject = element(by.css('button')).getText();
-        let result = 'Submit Value';
+        let result = 'Click Me !!';
         expect(subject).toEqual(result);
     });
 
