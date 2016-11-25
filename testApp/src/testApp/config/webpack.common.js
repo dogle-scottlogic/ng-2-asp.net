@@ -32,7 +32,7 @@ module.exports = function (options) {
 
         resolve: {
             extensions: ['', '.ts', '.js', '.json', '.scss', '.css'],
-            modules: [helpers.root('clientsrc'), 'node_modules'],
+            modules: [helpers.root('clientsrc'), 'node_modules']
 
         },
 
@@ -48,7 +48,7 @@ module.exports = function (options) {
                       flags: 'g'
                   },
                   include: [helpers.root('clientsrc')]
-              },
+              }
 
             ],
 
@@ -117,7 +117,7 @@ module.exports = function (options) {
 
           new CleanWebpackPlugin(
                     [
-                        './wwwroot/dist',
+                        './wwwroot/dist'
                     ]
                 ),
 
@@ -133,9 +133,9 @@ module.exports = function (options) {
 
           new HtmlElementsPlugin({
               headTags: require('./head-config.common')
-          }),
+          })
 
-        ],
+        ]
 
     };
-}
+};

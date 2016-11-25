@@ -1,4 +1,11 @@
 {
+  "atom": { "rewriteTsconfig": false },
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "buildOnSave": false,
+  "compileOnSave": false,
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./clientsrc",
@@ -25,12 +32,5 @@
   "exclude": [
     "node_modules",
     "dist"
-  ],
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  },
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "atom": { "rewriteTsconfig": false }
+  ]
 }
